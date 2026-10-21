@@ -6,6 +6,22 @@ An Agent Skill for turning research papers into illustrated Chinese technical ar
 
 **技能调用名：`lark-paper-blog`** · **许可证：[MIT](LICENSE)**
 
+## Case：RoboJEPA 论文解读
+
+[查看完整飞书文档：RoboJEPA](https://my.feishu.cn/wiki/NLWUw28pmiveCBkxU52cdeQCn6g)
+
+从论文书签和三点概览开始，按问题展开方法、训练、实验和局限；下图是案例文档的真实页面截图，点击图片可查看全文。
+
+[![RoboJEPA 飞书文档效果：左侧章节目录，右侧论文书签、动机／方法／核心贡献高亮概览及分点正文](docs/images/robojepa-case.jpg)](https://my.feishu.cn/wiki/NLWUw28pmiveCBkxU52cdeQCn6g)
+
+## 一句话让 Agent 安装
+
+将下面这一句话发给 Codex、Claude Code 等具备终端执行能力的 Agent：
+
+```text
+请按 https://github.com/Littleor/paper-to-feishu-doc-skill 的 README，为当前 Agent 安装 lark-paper-blog，并检查或补齐 lark-cli、lark-doc 和 lark-shared 依赖，需要飞书登录时引导我完成授权，最后验证安装是否成功。
+```
+
 ## 能做什么
 
 - 从论文书签、arXiv 链接或其他官方论文来源开始，整理动机、方法、训练、实验、消融和局限。
@@ -36,7 +52,7 @@ npx skills add larksuite/cli -g
 
 ### 2. 安装本 Skill
 
-仓库内容发布后，可以通过 [Skills CLI](https://github.com/vercel-labs/skills) 安装：
+可以通过 [Skills CLI](https://github.com/vercel-labs/skills) 安装：
 
 ```bash
 npx skills add Littleor/paper-to-feishu-doc-skill --skill lark-paper-blog -g
