@@ -1,0 +1,14 @@
+# Local task artifacts and credentials
+work/
+outputs/
+.env
+.env.*
+*.pem
+*.key
+
+# Local development files
+.DS_Store
+node_modules/
+.venv/
+__pycache__/
+*.pyc
